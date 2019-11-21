@@ -1,0 +1,8 @@
+*{
+  box-sizing: border-box;
+}
+#app{
+  padding: 10px;
+  width: 100px;
+  height:100px;
+}

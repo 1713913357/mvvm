@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./index.css">
+  <title>my</title>
+</head>
+<body>
+  <div id='app'>
+    <input type="text" v-model="studentMsg.name">
+    <div>{{inpVal}} {{studentMsg.name}}</div>
+    <div>{{studentMsg.name}}</div>
+  </div>
+  <script src="./mvvm.js"></script>
+  <script>
+    new Mvvm({
+      el:"app",
+      data:{
+        inpVal:'你好',
+        studentMsg:{
+          name:'you too',
+          age:12
+        }
+      }
+    })
+  </script>
+</body>
+</html>
